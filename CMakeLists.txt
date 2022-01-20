@@ -21,3 +21,7 @@ message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 include_directories(${OpenCV_INCLUDE_DIRS})
 target_link_libraries(CppOpenvc ${OpenCV_LIBS})
 # TODO: 如有需要，请添加测试并安装目标。
+add_subdirectory(D:\\dlib-19.22\\dlib dlib_build)
+target_link_libraries(CppOpenvc dlib::dlib)
+
+
